@@ -1,0 +1,5 @@
+<h3>{{ movie.Nombre }}</h3>
+<img [src]="movie.Dir_img">
+<p>{{ movie!.Genero + '\n'+movie.Sinopsis }}</p>
+<button mat-raised-button color="primary" (click)="clickExit()">Exit</button>
+<a [routerLink]="['/movies',movie.ID_pag]">Detalles</a>
